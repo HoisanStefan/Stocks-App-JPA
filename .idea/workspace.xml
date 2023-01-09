@@ -4,69 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24f1304d-37aa-4798-a13f-4bd7004c0389" name="Changes" comment="Stocks app">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2aad560c-0f38-433f-86df-4cd5edec206d.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2aad560c-0f38-433f-86df-4cd5edec206d/storage_v2/_src_/database/H2DB.6H4hAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2aad560c-0f38-433f-86df-4cd5edec206d/storage_v2/_src_/database/H2DB.6H4hAA/schema/INFORMATION_SCHEMA.NBgcMw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2aad560c-0f38-433f-86df-4cd5edec206d/storage_v2/_src_/database/H2DB.6H4hAA/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proiect Java.postman_collection.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schema baza de date.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/StocksApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/controllers/BrandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/controllers/CustomErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/controllers/OfferController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/controllers/ProviderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/controllers/ResupplyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/controllers/SaleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/entities/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/entities/Offer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/entities/Provider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/entities/Resupply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/entities/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/exceptions/ArgumentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/BrandRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/OfferRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/ProviderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/ResupplyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/SaleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/impl/BrandRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/impl/OfferRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/impl/ProductRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/impl/ProviderRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/impl/ResupplyRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/repositories/impl/SaleRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/BrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/OfferService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/ProviderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/ResupplyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/SaleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/impl/BrandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/impl/OfferServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/impl/ProviderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/impl/ResupplyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/services/impl/SaleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/stocks/utils/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
-    </list>
+    <list default="true" id="24f1304d-37aa-4798-a13f-4bd7004c0389" name="Changes" comment="Stocks app" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,8 +127,16 @@
       <updated>1672853679507</updated>
       <workItem from="1672853683046" duration="9639000" />
       <workItem from="1673171294846" duration="97000" />
-      <workItem from="1673171411653" duration="70542000" />
+      <workItem from="1673171411653" duration="70902000" />
     </task>
+    <task id="LOCAL-00001" summary="Stocks app">
+      <created>1673290051721</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673290051721</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
