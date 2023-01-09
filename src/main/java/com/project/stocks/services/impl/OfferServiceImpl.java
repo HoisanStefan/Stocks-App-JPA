@@ -4,6 +4,7 @@ import com.project.stocks.entities.Offer;
 import com.project.stocks.repositories.OfferRepository;
 import com.project.stocks.repositories.impl.OfferRepositoryImpl;
 import com.project.stocks.services.OfferService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -45,6 +46,7 @@ public class OfferServiceImpl implements OfferService {
     }
 
     @Override
+    @Operation(summary = "Checks if Offer with given id exists and updates it with the given percentage")
     public Offer updateOffer(Integer id, Integer percentage) {
         try {
             Optional<Offer> offer = this.offerRepository.findById(id);
@@ -63,6 +65,9 @@ public class OfferServiceImpl implements OfferService {
     }
 
     @Override
+    @Operation(summary = "Deletes the offer from products and then deletes the offer",
+            description = "We first search all the references to the current offer in the products table." +
+                    "After we found all the products referencing the offer, we can safely delete the offer")
     public boolean deleteOffer(Integer id){
         try {
             if (this.offerRepository.findById(id).isPresent()) {

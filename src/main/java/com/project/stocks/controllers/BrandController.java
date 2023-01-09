@@ -40,7 +40,7 @@ public class BrandController {
 
     @GetMapping(value = "/brand")  // http://localhost:8080/brand
     @Operation(summary = "Retrieves a brand from database with the given name",
-            description = "If there's no entity identified by the given ID, it returns a null object")
+            description = "If there's no entity identified by the given name, it returns a null object")
     public List<Brand> getBrandByName(@RequestBody @Valid Brand input) {
         return brandService.getBrandByName(input.getName());
     }

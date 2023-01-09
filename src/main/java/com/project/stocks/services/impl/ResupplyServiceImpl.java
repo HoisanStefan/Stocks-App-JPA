@@ -8,6 +8,7 @@ import com.project.stocks.repositories.impl.ResupplyRepositoryImpl;
 import com.project.stocks.services.ProductService;
 import com.project.stocks.services.ProviderService;
 import com.project.stocks.services.ResupplyService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -43,6 +44,10 @@ public class ResupplyServiceImpl implements ResupplyService {
     }
 
     @Override
+    @Operation(summary = "Inserts a new Resupply row and updates the corresponding Product",
+            description = "We check if the given request body is valid and then we retrieve the corresponding " +
+                    "entities from the database. We then create a Resupply object and populate it with data." +
+                    "At last, we update the product in the database in insert the Resupply object")
     public Resupply insertResupply(Map<String, Object> resupply) {
         try {
             Resupply insertResupply = new Resupply();
@@ -100,6 +105,8 @@ public class ResupplyServiceImpl implements ResupplyService {
     }
 
     @Override
+    @Operation(summary = "Deletes an entity of type Resupply", description = "Checks if there is an entity of type " +
+            "Resupply with the given ID and deletes it if found")
     public boolean deleteResupply(Integer id) {
         try {
             if (this.resupplyRepository.findById(id).isPresent()) {

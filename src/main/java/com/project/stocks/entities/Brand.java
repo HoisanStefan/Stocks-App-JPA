@@ -1,5 +1,6 @@
 package com.project.stocks.entities;
 
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 

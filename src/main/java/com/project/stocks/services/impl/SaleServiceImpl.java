@@ -7,6 +7,7 @@ import com.project.stocks.repositories.SaleRepository;
 import com.project.stocks.repositories.impl.SaleRepositoryImpl;
 import com.project.stocks.services.ProductService;
 import com.project.stocks.services.SaleService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,6 +39,10 @@ public class SaleServiceImpl implements SaleService {
     }
 
     @Override
+    @Operation(summary = "Inserts a new Sale row and updates the corresponding Product",
+            description = "We check if the given request body is valid and then we retrieve the corresponding " +
+                    "entities from the database. We then create a Sale object and populate it with data." +
+                    "At last, we update the product in the database in insert the Sale object")
     public Sale insertSale(Map<String, Object> sale) {
         try {
             Sale insertSale = new Sale();
@@ -88,6 +93,8 @@ public class SaleServiceImpl implements SaleService {
     }
 
     @Override
+    @Operation(summary = "Deletes an entity of type Sale", description = "Checks if there is an entity of type " +
+            "Sale with the given ID and deletes it if found")
     public boolean deleteSale(Integer id) {
         try {
             if (this.saleRepository.findById(id).isPresent()) {

@@ -5,6 +5,7 @@ import com.project.stocks.entities.Product;
 import com.project.stocks.repositories.OfferRepository;
 import com.project.stocks.services.BrandService;
 import com.project.stocks.services.ProviderService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -32,13 +33,16 @@ public class ProductRepositoryImpl {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    @Operation(summary = "Retrieves the number of rows from the given table")
     public Integer count() {
         Integer rowCount = this.jdbcTemplate.queryForObject("select count(*) from products", Integer.class);
         return rowCount;
     }
 
+    @Operation(summary = "Retrieves all produtcts with the given offer_id using a jdbcTemplate query")
     public List<Product> getProductsByOfferId(Integer id) {
-        List<Product> products = this.jdbcTemplate.query("select * from products where offer_id=" + id, new RowMapper<Product>(){
+        List<Product> products = this.jdbcTemplate.query("select * from products where offer_id=" + id,
+                new RowMapper<Product>(){
             @Override
             public Product mapRow(ResultSet rs, int rownumber) throws SQLException {
                 Product p = new Product();
