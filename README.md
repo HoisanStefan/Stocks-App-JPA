@@ -2,7 +2,7 @@
 
 ## Descriere
 
-*Aplicatia Stocks are rolul de a gestiona inventarul unui magazin. In acest sens, administratorul/angajatii magazinului pot vedea starea curenta a inventarului din magazin si pot inregistra vanzarile facute sau pot initia noi aprovizionari pentru anumite produse de la furnizorii magazinului. Stocks are de asemenea un sistem de oferte care permite adaugarea unei noi oferte in sistem si aplicarea acesteia pe anumite produse.*
+*Aplicatia Stocks are rolul de a gestiona inventarul unui magazin. In acest sens, administratorul/angajatii magazinului pot vedea starea curenta a inventarului din magazin si pot inregistra vanzarile facute sau pot initia noi aprovizionari pentru anumite produse de la furnizorii magazinului. Stocks are de asemenea un sistem de oferte care permite adaugarea unei noi oferte in sistem si aplicarea acesteia pe anumite produse. Magazinul dispune de un adaos comercial de 30% la toate produsele, reducerea in urma unei oferte este calculata dupa adaosul comercial.*
 
 ## Cerintele de business sub forma de user stories
 
