@@ -1,0 +1,57 @@
+o aplicatie web pentru inventarul unui magazin
+
+-produse:
+	-id_produs PK
+	-nume
+	-cantitate
+	-id_furnizor FK not nullable
+	-pret unitar furnizor
+	-pret unitar la raft
+	-id_oferta FK nullable
+	-id_brand FK not nullable
+
+-branduri:
+	-id_brand PK
+	-nume
+
+-oferte:
+	-id_oferta PK
+	-procentaj_reducere
+
+-vanzari:
+	-id_vanzare PK
+	-id_produs FK not nullable
+	-cantitate produs vandut
+	-valoare totala vanzare (tb calculata la pretul redus daca exista oferta)
+
+-aprovizionari:
+	-id_aprovizionare PK
+	-id_furnizor FK not nullable
+	-id_produs FK not nullable
+	-cantitate produs
+
+-furnizori:
+	-id_furnizor PK
+	-nume furnizor
+	-adresa
+	-telefon
+
++Add product - Cand este adaugat un produs, stocul initial pt el este 0, pretul de la furnizor este stabilit la crearea produsului, pretul de la raft este +30% fata de cel al furnizorului
++Add provider - adauga un nou furnizor de la care pot primi aprovizionari
++Receive product - aprovizionare de la un furnizor pentru un produs, se modifica cantitatea produsului si se adauga o aprovizionare
++Sell product - se modifica cantitatea produsului si se adauga o vanzare noua
++Modify product - se poate modifica numele, pretul de la furnizor (implicit cel de la raft), se poate adauga o oferta pt produs sau se poate scoate o oferta
++Add offer - se adauga o oferta noua
++Modify offer - se modifica o oferta
++Delete offer - este stearsa o oferta
++Add brand - este adaugat un nou brand de produse
+
+Constrangeri:
+- cand este adaugata oferta pe produs, este actualizat pretul de la raft
+- nu se poate vinde o cantitate mai mare decat stocul
+- este necesara aprovizionarea dupa adaugarea produsului (cantitataea initiala este 0)
+- un produs tb sa aiba un brand si un furnizor
+- o aprovizionare tb sa aiba un furnizor si un produs
+- o vanzare tb sa aiba un produs
+- pretul de la raft este pretul de la furnizor +30%
+- ofertele sunt de tip reducere cu valoarea exprimata in procente (valoarea procentuala este scazuta din pretul de la raft)
