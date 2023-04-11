@@ -1,4 +1,4 @@
-# WEB_JAVA_PROJECT - Stocks
+# Stocks App - JPA H2
 
 ## Descriere
 
